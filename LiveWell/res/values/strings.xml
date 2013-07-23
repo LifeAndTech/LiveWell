@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">LiveWell</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Live Well</string>
+    <string name="action_settings">Home</string>
+    <string name="calories">Calories</string>
+	<string name="calendar">Calendar</string>
+	<string name="inspiration">Inspiration</string>
+	<string name="paleo">Paleo Check</string>
+    <string name="title_activity_profile">User Profile</string>
+    <string name="enter_weight">Enter Current Weight:</string>
+    <string name="enter_goal">Enter Goal Weight:</string>
+    <string name="gender">Gender:</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="typical_exercise">User Typical Exercise:</string>
+    <string name="exercise_sedate">Sedate</string>
+    <string name="exercise_moderate">Moderate</string>
+    <string name="exercise_active">Active</string>
+    <string name="checkbox_agreement">I understand that it is advisable to consult a physician before undertaking a diet</string>
+    <string name="btn_submit">Submit</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_calendar">Calendar</string>
 
 </resources>

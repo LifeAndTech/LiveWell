@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+		
+    <ImageView
+        android:id="@+id/image_androideatapple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp" />
+		
+	<TextView
+        android:id="@+id/textview_caloriesIntake"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        style="@style/paragraph" />
+        
+	<TextView
+        android:id="@+id/textview_dietDuration"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="50dp"
+        style="@style/paragraph"  
+        android:layout_below="@+id/textview_caloriesIntake"/>
+        
+	<View
+    	android:id="@+id/horizontalLine"
+    	android:layout_width="match_parent"
+    	android:layout_height="2dip"
+    	android:layout_below="@id/textview_dietDuration"
+    	android:background="#3366CC" />
+    	
+    <View
+    	android:id="@+id/whiteLine"
+		android:layout_width="match_parent"
+		android:layout_height="8dip"
+		android:layout_below="@id/horizontalLine"
+		android:background="#FFFFFF" />
+		
+	<Button
+        android:id="@+id/btn_recalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		style="@style/title"  
+        android:text="Recalculate"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/whiteLine" />
+		
+ 	<Button
+        android:id="@+id/btn_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		style="@style/title"         
+        android:text="Accept this diet"
+        android:layout_marginLeft="140dp"
+        android:layout_below="@+id/whiteLine" />
+        
+</RelativeLayout>

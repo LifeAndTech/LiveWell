@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    tools:context=".Profile" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
+        android:orientation="vertical" >
+
+    <TextView
+    	android:id="@+id/textView_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_profile" 
+        style="@style/heading1" />
+        
+   	<ImageView
+   	    android:id="@+id/img_folder"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="30dp"
+   	    android:layout_alignParentTop="true"
+   	    android:layout_toRightOf="@+id/textView_profile"
+   	    android:gravity="right"
+   	    android:src="@drawable/folder" />
+    	
+    <View
+    	android:id="@+id/horizontalLine"
+    	android:layout_width="match_parent"
+    	android:layout_height="2dip"
+    	android:layout_below="@id/img_folder"
+    	android:background="#3366CC" />
+    <View
+    	android:id="@+id/whiteLine"
+		android:layout_width="match_parent"
+		android:layout_height="8dip"
+		android:layout_below="@id/horizontalLine"
+		android:background="#FFFFFF" />
+   	
+   	<!-- Enter Current Weight -->
+    <TextView
+    	android:id="@+id/textView_enterWeight"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/enter_weight"
+    	android:layout_below="@id/whiteLine"
+    	style="@style/heading2" />
+    	
+    	<EditText
+    	    android:id="@+id/editText_enterWeight"
+    	    style="@style/title"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/textView_enterWeight" />
+   	
+   	<!-- Enter Goal Weight: -->
+    <TextView
+    	android:id="@+id/textView_enterGoal"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/enter_goal"
+    	android:layout_below="@id/editText_enterWeight"
+    	style="@style/heading2" />
+    	
+    	<EditText
+    	    android:id="@+id/editText_enterGoal"
+    	    style="@style/title"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/textView_enterGoal" />
+    	
+    <!-- Gender: -->   	
+    <TextView
+    	android:id="@+id/textView_gender"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/gender"
+    	android:layout_below="@id/editText_enterGoal"
+    	style="@style/heading2" />
+    	
+    <RadioGroup
+    	android:id="@+id/radioGender"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/textView_gender"
+    	android:paddingLeft="@dimen/activity_margin">
+    
+    	<RadioButton
+    		android:id="@+id/radioMale"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/gender_male"
+    		style="@style/title"
+    		android:checked="true" />
+    	
+    	<RadioButton
+    		android:id="@+id/radioFemale"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/gender_female"
+    		style="@style/title"
+    		android:checked="false" />		
+    </RadioGroup>
+    
+   	<!-- Typical Excercise: -->   	
+    <TextView
+    	android:id="@+id/textView_typicalExercise"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/typical_exercise"
+    	android:layout_below="@id/radioGender"
+    	style="@style/heading2" />
+    	
+    <RadioGroup
+    	android:id="@+id/radioExercise"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/textView_typicalExercise"
+    	android:paddingLeft="@dimen/activity_margin">
+    
+    	<RadioButton
+    		android:id="@+id/radioSedate"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/exercise_sedate"
+    		style="@style/title"
+    		android:checked="true" />
+    	
+    	<RadioButton
+    		android:id="@+id/radioModerate"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/exercise_moderate"
+    		style="@style/title"
+    		android:checked="false" />	
+    		
+    	<RadioButton
+    		android:id="@+id/radioActive"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/exercise_active"
+    		style="@style/title"
+    		android:checked="false" />	
+    </RadioGroup>    	    	
+    		
+    <CheckBox 
+    	android:id="@+id/chkAgreement"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:text="@string/checkbox_agreement"
+    	android:layout_below="@id/radioExercise"
+    	style="@style/paragraph"
+    	android:checked="false" /> 
+    
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkAgreement"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:text="@string/btn_submit" />
+
+	</RelativeLayout>
+
+</ScrollView>
